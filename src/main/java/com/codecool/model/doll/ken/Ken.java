@@ -8,6 +8,8 @@ public class Ken extends Doll implements CanGoToRealWorld {
 
     private static final String HOUSE_NAME = "Ken's Mojo Dojo Casa House";
     private static final String NAME = "Ken";
+    private static final String PATRIARCHY = "Patriarchy";
+
     private String job;
     private int visitingCounter;
 
@@ -28,11 +30,15 @@ public class Ken extends Doll implements CanGoToRealWorld {
 
     @Override
     public void goToRealWorld() {
-        job = "Patriarchy";
+        job = PATRIARCHY;
         if (barbieHouse != null) {
             barbieHouse.setName(HOUSE_NAME);
             barbieHouse.kickStereotypicalBarbies();
         }
+    }
+
+    public boolean isPatriarchal() {
+        return job.equals(PATRIARCHY);
     }
 
     @Override

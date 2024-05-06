@@ -11,6 +11,9 @@ public final class BarbieHouse {
     private String name;
     private Set<Doll> dolls;
 
+    private static final String MOJO_DOJO_CASA_HOUSE_NAME = "Ken's Mojo Dojo Casa House";
+
+
     public BarbieHouse() {
         this("Barbie's Dream House");
     }
@@ -56,6 +59,14 @@ public final class BarbieHouse {
     @Override
     public int hashCode() {
         return Objects.hash(name);
+    }
+
+    public boolean isMojoDojoCasaHouse() {
+        return name.equals(MOJO_DOJO_CASA_HOUSE_NAME);
+    }
+
+    public int getDollCount() {
+        return dolls.size();
     }
 
 }

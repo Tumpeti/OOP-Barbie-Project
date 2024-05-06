@@ -23,4 +23,8 @@ public class StereotypicBarbie extends Barbie implements CanGoToRealWorld {
     public void goToRealWorld() {
         knowsTheKnowledgeOfStruggle = true;
     }
+
+    public boolean isKnowsTheKnowledgeOfStruggle() {
+        return knowsTheKnowledgeOfStruggle;
+    }
 }
