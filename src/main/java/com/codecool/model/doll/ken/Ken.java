@@ -14,8 +14,12 @@ public class Ken extends Doll implements CanGoToRealWorld {
     private int visitingCounter;
 
     public Ken() {
+        this("Beach");
+    }
+
+    public Ken(String job) {
         super(NAME);
-        this.job = "Beach";
+        this.job = job;
         this.visitingCounter = 0;
     }
 
