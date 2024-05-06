@@ -19,12 +19,12 @@ public class BarbieLand {
         this.dolls = new HashSet<>();
     }
 
-    public boolean addBarbieHouse(BarbieHouse barbieHouse) {
-        return barbieHouses.add(barbieHouse);
+    public void addBarbieHouse(BarbieHouse barbieHouse) {
+        barbieHouses.add(barbieHouse);
     }
 
-    public boolean addDoll(Doll doll) {
-        return dolls.add(doll);
+    public void addDoll(Doll doll) {
+        dolls.add(doll);
     }
 
     public boolean isBarbieLandDoomed() {
